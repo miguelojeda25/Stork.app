@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado {
+    background: linear-gradient(to bottom, #1877f2 0%, #1877f2 40%, #42a5f5 60%, #ffff 100%);
+    height: 180px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-buscador {
+    width: 80%;
+    max-width: 500px;
+    margin-top: -80px;
+}
+
+.buscador {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(20, 5, 5, 0.03);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.buscador:focus {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transform: scale(1.02);
+}
+
+.menu-icono {
+    width: 30px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    left: 30px;   
+}
+
+.menu-icono span {
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1877f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.banners {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    padding: 10px;
+}
+
+.banner {
+    background-color: gray;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.productos-recomendados {
+    padding: 20px;
+    background-color: white;
+}
+
+.productos-recomendados h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.productos-scroll {
+    display: flex;
+    overflow: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+.producto {
+    min-width: 140px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.imagen-placeholder {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.producto .titulo {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0 2px;
+}
+
+.producto .precio {
+    font-size: 13px;
+    color: black;
+}
+
+.producto .envío {
+    font-size: 12px;
+    color: green;
+}
+
+ body {
+    font-family: 'roboto', sans-serif;
+}
+
+.inspirado {
+    padding: 20px;
+    background-color: #f2f2f2;
+    max-height: 500px;
+    overflow: auto;
+    border-top: 1px solid #ccc;
+}
+
+.inspirado h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.producto-visto {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.producto-visto .info {
+    flex: 1;
+}
+
+.producto-visto .info h3 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.producto-visto .precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.producto-visto .envío {
+    color: green;
+    font-size: 14px;
+    margin: 4px 0 0;
+}
+
+.producto-visto .imagen-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 6px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
